@@ -282,11 +282,10 @@ input.search-form:hover {
   border-radius: 0;
   margin-bottom: 0;
   background: #fff;
-  padding: 20px 0;
 }
 
 .navbar-nav {
-  padding-top: 24px;
+  padding-top: 20px;
 }
 
 .navbar-nav>li {
@@ -997,6 +996,7 @@ a.accordion-toggle i {
 #partner {
   color: #fff;
   text-align: center;
+  padding: 20px 0;
 }
 
 #partner h2,
@@ -1052,6 +1052,7 @@ a.accordion-toggle i {
 }
 
 /*************************
+
 ********* About Us Page CSS ******
 **************************/
 
@@ -2930,6 +2931,9 @@ shortcodes page css
 
 
 @media screen and (max-width: 1000px) {
+  .full-screen-img{
+    width: 100%;
+  }
   .navbar-brand img {
     width: 3rem;
   }
@@ -3004,6 +3008,7 @@ flex-wrap:wrap;
 .opacity-zero{
   opacity: 0;
   position: absolute;
+  margin: 0;
 }
 @media screen and (min-width: 1200px) {
   .footer-top {
@@ -3011,4 +3016,34 @@ flex-wrap:wrap;
     margin-right: auto;
     margin-left: auto; */
   }
+  .full-screen-img{
+    width: 60%;
+  }
+}
+.understand{
+  margin: 0 10% 50px 10%;
+}
+.understand tr td,th{
+  text-align: center;
+}
+.understand tr td:first-child{
+  width: 100px;
+}
+
+.half-screen-img{
+  width: 50%;
+}
+.mtop50{
+  margin-top: 50px;
+}
+.mbottom50{
+  margin-bottom: 50px;
+}
+.flex-common{
+  display: flex;
+  justify-content: center;
+  
+}
+.flex-common div:first-child{
+  margin-right: 20px;
 }

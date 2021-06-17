@@ -24,7 +24,7 @@ jQuery(function ($) {
 	// portfolio filter
 	$(window).load(function () {
 		'use strict';
-		var $portfolio_selectors = $('.portfolio-filter >li>a');
+		var $portfolio_selectors = $('.navbar-nav >li>a');
 		var $portfolio = $('.portfolio-items');
 		$portfolio.isotope({
 			itemSelector: '.portfolio-item',
@@ -38,7 +38,6 @@ jQuery(function ($) {
 			$portfolio.isotope({
 				filter: selector
 			});
-			return false;
 		});
 	});
 

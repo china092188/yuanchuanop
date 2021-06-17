@@ -97,6 +97,11 @@
 
 }
 
+@media (min-width: 768px){
+  .mobile-nav{
+    display: none;
+  }
+}
 
 /* sm */
 @media (min-width: 768px) and (max-width: 991px) {
@@ -189,8 +194,18 @@
 @media (max-width: 767px) {
   .container > .navbar-header, .container > .navbar-collapse{
     margin-left: 0;
+    margin-top: 20px;
   }
-
+  .navbar-inverse{
+    height: 200px;
+    position: relative;
+    z-index: 9999;
+  }
+  .navbar-inverse .container{
+    position: fixed;
+    width: 100%;
+    background: #fff;
+  }
   .top-number{
     font-size: 14px;
   }
@@ -291,8 +306,13 @@
   .post_reply_comments {
     padding-left: 20px;
   }
-    
-
+  .navbar-nav>li{
+    display: inline;
+    margin-left: 0;
+  }
+  .navbar-nav>li:first-child{
+    margin-left: 10px;
+  }
 }
 
 /* XS Portrait */
