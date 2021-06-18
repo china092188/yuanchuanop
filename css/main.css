@@ -3016,7 +3016,7 @@ flex-wrap:wrap;
   position: absolute;
   margin: 0;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1000px) {
   .footer-top {
       /* width: 1170px;
     margin-right: auto;
