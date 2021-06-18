@@ -2931,6 +2931,12 @@ shortcodes page css
 
 
 @media screen and (max-width: 1000px) {
+  .understand-item{
+    width: 100%!important
+  }
+  .understand-row{
+    display: block!important
+  }
   .full-screen-img{
     width: 100%;
   }
@@ -3029,7 +3035,37 @@ flex-wrap:wrap;
 .understand tr td:first-child{
   width: 100px;
 }
-
+.understand-row{
+  display: flex;
+  justify-content: space-around;
+}
+.understand-item:first-child{
+  margin-right: 20px;
+}
+.understand-item img{
+  width: 40px;
+  margin-right: 20px;
+}
+.understand-item{
+  display: flex;
+  box-shadow: 0 4px 12px 0 rgb(219 217 217);
+  width: 40%;
+  min-height: 200px;
+  border-radius: 10px;
+  border: 1px solid #ececec;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+.understand-item div{
+  text-align: start;
+}
+.understand-item .understand-item-logo{
+  width: 30%;
+}
+.understand-item h3{
+  margin-top: 0;
+}
 .half-screen-img{
   width: 50%;
 }
@@ -3046,4 +3082,9 @@ flex-wrap:wrap;
 }
 .flex-common div:first-child{
   margin-right: 20px;
+}
+.navbar-header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
