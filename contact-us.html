@@ -187,42 +187,6 @@
     <script src="js/responsiveslides.js"></script>
     <script src="js/main.js"></script>
     <script src="js/wow.min.js"></script>
-    <script src="http://api.map.baidu.com/getscript?v=1.4&ak=&services=&t=20150522093217"></script>
-    <script
-        src="http://ditu.google.cn/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&sensor=false&_=20150522093217">
-    </script>
-    <script>
-        var map; //百度地图实例
-        var local;
-        //创建经纬度方法
-        function createpoint(lon, lat) {
-            return new BMap.Point(lon, lat);
-        };
-
-        function initMap(dom, point) {
-            map = new BMap.Map(dom);
-            map.centerAndZoom(point, 15);
-            map.enableScrollWheelZoom();
-            local = new BMap.LocalSearch(map, {
-                renderOptions: {
-                    map: map
-                }
-            });
-        }
-
-        function searchAddress() {
-            var keyAddress = $("#keyword").val();
-            local.search(keyAddress);
-        }
-        $(function () {
-            var point = createpoint(116.404, 39.915);
-            initMap("mapContainer", point);
-
-        });
-        setTimeout(() => {
-            searchAddress()
-        }, 10)
-    </script>
 </body>
 
 </html>
